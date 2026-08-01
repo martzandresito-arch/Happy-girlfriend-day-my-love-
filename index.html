@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta charset="UTF-8">
@@ -26,7 +27,7 @@ body {
 .contenido {
     padding: 25px;
     max-width: 600px;
-    animation: aparecer 2s;
+    animation: aparecer 1.5s;
 }
 
 h1 {
@@ -47,61 +48,28 @@ button {
     background: white;
     color: #d63384;
     font-size: 18px;
-    cursor: pointer;
-    margin-top: 15px;
 }
 
-button:hover {
-    transform: scale(1.1);
-}
-
-#historia {
+#historia, #amor, #final {
     display:none;
 }
 
 @keyframes aparecer {
-
-from {
-    opacity:0;
-    transform:translateY(20px);
-}
-
-to {
-    opacity:1;
-    transform:translateY(0);
-}
-
-}
-
-.estrella {
-    position:absolute;
-    width:5px;
-    height:5px;
-    background:white;
-    border-radius:50%;
-    animation: brillo 3s infinite;
-}
-
-@keyframes brillo {
-
-50% {
-    opacity:0.2;
-}
-
+    from {
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 </style>
 
 </head>
 
-
 <body>
-
-
-<div class="estrella" style="top:20%;left:20%;"></div>
-<div class="estrella" style="top:70%;left:80%;"></div>
-<div class="estrella" style="top:40%;left:60%;"></div>
-<div class="estrella" style="top:85%;left:30%;"></div>
 
 
 <div class="contenido" id="inicio">
@@ -110,20 +78,14 @@ to {
 
 <p>
 Este pequeño lugar fue creado especialmente para ti,
-porque aunque a veces las palabras no alcanzan para explicar todo lo que sentimos,
-quiero intentar dejar aquí una pequeña parte de mi corazón.
+porque aunque a veces las palabras no alcanzan para explicar todo lo que siento,
+quiero intentar mostrarte un poco de todo lo que significas para mí.
 </p>
 
 <p>
-Quizás no pueda entregarte un regalo que puedas sostener con tus manos,
-pero sí puedo darte algo que lleva tiempo, cariño y muchos sentimientos.
+Quizás no pueda darte un regalo que puedas sostener con tus manos,
+pero sí puedo darte algo que nace de mi corazón.
 </p>
-
-<p>
-Cada palabra escrita aquí representa un pensamiento,
-un recuerdo y una razón por la que eres alguien tan especial en mi vida.
-</p>
-
 
 <button onclick="mostrarHistoria()">
 ✨ Comenzar ✨
@@ -132,45 +94,31 @@ un recuerdo y una razón por la que eres alguien tan especial en mi vida.
 </div>
 
 
-
 <div class="contenido" id="historia">
 
-<h1>Algo que quiero decirte 💗</h1>
-
+<h1>Una historia especial 💗</h1>
 
 <p>
-Nunca imaginé que alguien pudiera llegar a mi vida de una manera tan inesperada
-y terminar convirtiéndose en una persona tan importante para mí.
+Nunca imaginé que una persona que llegó a mi vida de una manera tan inesperada
+terminaría convirtiéndose en alguien tan importante para mí.
 </p>
 
-
 <p>
-Al principio no era la mejor versión de mí mismo.
-Cometí errores y no siempre supe hacer las cosas de la manera correcta,
-pero con el tiempo aprendí, crecí y entendí lo bonito que es cuidar a alguien especial.
+Al principio no fui la mejor versión de mí mismo.
+Cometí errores, fui impaciente y no supe valorar las cosas como debía,
+pero con el tiempo aprendí, crecí y entendí lo importante que era cuidar a alguien especial.
 </p>
 
-
 <p>
-Gracias por conocer mi corazón incluso en mis momentos donde no era perfecto.
-Gracias por tu paciencia, por tus palabras, por las risas,
-por esos momentos donde lograste hacerme feliz incluso estando lejos.
-</p>
-
-
-<p>
-Amo tu manera de ser, esa forma única que tienes de hacer que todo se sienta diferente.
+Gracias por conocer mi corazón incluso cuando no era perfecto.
+Gracias por cada momento de felicidad, por cada risa,
+por cada palabra que me hizo sentir acompañado incluso estando lejos.
+</p><p>
+Me encanta tu forma de ser, esa manera única que tienes de hacer que todo se sienta diferente.
 Amo tu voz, porque para mí es una de las melodías más bonitas que existen.
-Amo tu risa, porque escucharla puede cambiar completamente mi día.
+Amo tu risa, porque tiene la capacidad de cambiar mi día.
+Amo cómo me haces sentir, la paz que me das y la felicidad que traes a mi vida.
 </p>
-
-
-<p>
-Amo la tranquilidad que me das,
-la felicidad que traes a mi vida,
-la forma en que me apoyas y cómo haces que una simple conversación pueda convertirse en un momento especial.
-</p>
-
 
 <p>
 Aunque exista distancia, quiero que nunca olvides algo:
@@ -178,14 +126,70 @@ hay alguien que piensa en ti, que valora cada detalle de ti
 y que está agradecido por tenerte en su vida.
 </p>
 
-
 <button onclick="siguiente()">
 💗 Continuar
 </button>
 
-
 </div>
 
+
+<div class="contenido" id="amor">
+
+<h1>Las cosas que amo de ti 💗</h1>
+
+<p>
+Amo tu forma de ser, porque tienes una manera única de hacer que mis días sean mejores.
+No necesito que seas perfecta, porque lo que amo es la persona que eres.
+</p>
+
+<p>
+Amo tu voz, porque incluso a la distancia logra darme tranquilidad.
+Para mí es una melodía especial que podría escuchar una y otra vez.
+</p>
+
+<p>
+Amo tu risa, porque tiene esa magia de alegrarme y hacer que un momento común se convierta en uno especial.
+</p>
+
+<p>
+Amo cómo me haces sentir, la felicidad que traes a mi vida,
+la paz que encuentro cuando hablamos y la forma en que me apoyas.
+</p>
+
+<p>
+Amo cada pequeño detalle que forma parte de ti,
+porque todas esas cosas juntas son las que hacen que seas alguien tan especial.
+</p>
+
+<button onclick="final()">
+💗 Última sorpresa
+</button>
+
+</div>
+<div class="contenido" id="final">
+
+<h1>Un último mensaje para ti 💗</h1>
+
+<p>
+Quiero que sepas que cada palabra escrita aquí viene de un lugar muy sincero.
+No es solo una página, es una pequeña forma de mostrarte lo importante que eres.
+</p>
+
+<p>
+Gracias por cada sonrisa, cada conversación, cada momento bonito
+y por todas esas pequeñas cosas que hacen que seas alguien tan especial.
+</p>
+
+<p>
+Aunque exista distancia, siempre voy a guardar con mucho cariño
+todo lo que hemos vivido y todo lo que significas para mí.
+</p>
+
+<h2>
+Tu mayor admirador💗
+</h2>
+
+</div>
 
 
 <script>
@@ -205,75 +209,17 @@ document.getElementById("amor").style.display="block";
 
 }
 
+
 function final(){
 
 document.getElementById("amor").style.display="none";
 document.getElementById("final").style.display="block";
 
-    }
-
-function siguiente(){
-
-document.getElementById("historia").style.display="none";
-document.getElementById("amor").style.display="block";
-
 }
 
-<div class="contenido" id="amor">
-
-<h1>Las cosas que amo de ti 💗</h1>
-
-<p>
-Amo tu forma de ser, porque tienes una manera única de hacer que mis días sean mejores.
-No necesito que seas perfecta, porque lo que amo es la persona que eres.
-</p>
-
-<p>
-Amo tu voz, porque incluso a la distancia logra darme tranquilidad.
-Para mí es una melodía especial que podría escuchar una y otra vez.
-</p>
-
-<p>
-Amo tu risa, porque tiene algo capaz de cambiar mi ánimo y hacer que un momento común se convierta en uno especial.
-</p>
-
-<p>
-Amo cómo me haces sentir, la felicidad que traes a mi vida,
-la paz que encuentro cuando hablamos y la forma en que me apoyas.
-</p>
-
-<p>
-Amo cada pequeño detalle que forma parte de ti,
-porque todas esas cosas juntas son las que hacen que seas alguien tan especial.
-</p>
-
-<button onclick="final()">
-💗 Última sorpresa
-</button>
-
-</div>
-
-
-<div class="contenido" id="final">
-
-<h1>Para siempre en mi corazón 💗</h1>
-
-<p>
-Gracias por cada sonrisa, cada momento y cada recuerdo.
-Gracias por formar parte de mi vida y por hacer que alguien como yo pueda sentirse tan feliz.
-</p>
-
-<p>
-Aunque exista distancia, quiero que recuerdes que siempre habrá alguien que te piensa con mucho cariño.
-</p>
-
-<h2>
-el niño que te ama con toda su alma💗
-</h2>
-
-</div>
 </script>
 
 
 </body>
-    </html>
+
+</html>
