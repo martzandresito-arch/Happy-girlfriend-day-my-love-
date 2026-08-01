@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,7 +11,7 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #4b005c, #ff7eb3);
     color: white;
     font-family: Georgia, serif;
@@ -18,7 +19,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .contenido {
@@ -34,7 +36,7 @@ h1 {
 
 p {
     font-size: 19px;
-    line-height: 1.7;
+    line-height: 1.8;
     margin-bottom: 25px;
 }
 
@@ -46,6 +48,7 @@ button {
     color: #d63384;
     font-size: 18px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 button:hover {
@@ -57,15 +60,17 @@ button:hover {
 }
 
 @keyframes aparecer {
-    from {
-        opacity:0;
-        transform: translateY(20px);
-    }
 
-    to {
-        opacity:1;
-        transform: translateY(0);
-    }
+from {
+    opacity:0;
+    transform:translateY(20px);
+}
+
+to {
+    opacity:1;
+    transform:translateY(0);
+}
+
 }
 
 .estrella {
@@ -78,14 +83,17 @@ button:hover {
 }
 
 @keyframes brillo {
-    50% {
-        opacity:0.2;
-    }
+
+50% {
+    opacity:0.2;
+}
+
 }
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -101,15 +109,21 @@ button:hover {
 <h1>Para ti 💗</h1>
 
 <p>
-Este pequeño espacio fue creado con mucho cariño,
-porque aunque a veces las palabras no sean suficientes,
-quiero intentar mostrarte un poco de todo lo que significas para mí.
+Este pequeño lugar fue creado especialmente para ti,
+porque aunque a veces las palabras no alcanzan para explicar todo lo que sentimos,
+quiero intentar dejar aquí una pequeña parte de mi corazón.
 </p>
 
 <p>
-Quizás no pueda darte un regalo que puedas sostener con tus manos,
-pero sí puedo darte algo que nace de mi corazón.
+Quizás no pueda entregarte un regalo que puedas sostener con tus manos,
+pero sí puedo darte algo que lleva tiempo, cariño y muchos sentimientos.
 </p>
+
+<p>
+Cada palabra escrita aquí representa un pensamiento,
+un recuerdo y una razón por la que eres alguien tan especial en mi vida.
+</p>
+
 
 <button onclick="mostrarHistoria()">
 ✨ Comenzar ✨
@@ -121,37 +135,57 @@ pero sí puedo darte algo que nace de mi corazón.
 
 <div class="contenido" id="historia">
 
-<h1>Una historia especial 💗</h1>
+<h1>Algo que quiero decirte 💗</h1>
+
 
 <p>
-Nunca imaginé que una persona que llegó a mi vida de una manera tan inesperada
-terminaría convirtiéndose en alguien tan importante para mí.
+Nunca imaginé que alguien pudiera llegar a mi vida de una manera tan inesperada
+y terminar convirtiéndose en una persona tan importante para mí.
 </p>
 
+
 <p>
-Al principio no fui la mejor versión de mí mismo.
-No sabía valorar las cosas como debía y cometí errores,
+Al principio no era la mejor versión de mí mismo.
+Cometí errores y no siempre supe hacer las cosas de la manera correcta,
 pero con el tiempo aprendí, crecí y entendí lo bonito que es cuidar a alguien especial.
 </p>
 
-<p>
-Gracias por conocer mi corazón incluso cuando no era perfecto.
-Gracias por cada momento de felicidad, por cada risa,
-por cada palabra que me hizo sentir acompañado incluso estando lejos.
-</p>
 
 <p>
-Me encanta tu forma de ser, esa manera única que tienes de hacer que todo se sienta diferente.
-Amo tu voz, porque para mí es una de las melodías más bonitas que existen.
-Amo tu risa, porque tiene la capacidad de cambiar mi día.
-Amo cómo me haces sentir, la paz que me das y la felicidad que traes a mi vida.
+Gracias por conocer mi corazón incluso en mis momentos donde no era perfecto.
+Gracias por tu paciencia, por tus palabras, por las risas,
+por esos momentos donde lograste hacerme feliz incluso estando lejos.
 </p>
+
+
+<p>
+Amo tu manera de ser, esa forma única que tienes de hacer que todo se sienta diferente.
+Amo tu voz, porque para mí es una de las melodías más bonitas que existen.
+Amo tu risa, porque escucharla puede cambiar completamente mi día.
+</p>
+
+
+<p>
+Amo la tranquilidad que me das,
+la felicidad que traes a mi vida,
+la forma en que me apoyas y cómo haces que una simple conversación pueda convertirse en un momento especial.
+</p>
+
+
+<p>
+Aunque exista distancia, quiero que nunca olvides algo:
+hay alguien que piensa en ti, que valora cada detalle de ti
+y que está agradecido por tenerte en su vida.
+</p>
+
 
 <button onclick="siguiente()">
 💗 Continuar
 </button>
 
+
 </div>
+
 
 
 <script>
@@ -166,7 +200,7 @@ document.getElementById("historia").style.display="block";
 
 function siguiente(){
 
-alert("Todavía queda mucho por descubrir... 💗");
+alert("Todavía queda una parte más de este regalo para ti 💗");
 
 }
 
@@ -174,4 +208,4 @@ alert("Todavía queda mucho por descubrir... 💗");
 
 
 </body>
-</html>
+    </html>
