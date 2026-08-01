@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Celia 💜</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #2b004f, #8000ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.estrellas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.estrella {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    animation: brillar 3s infinite;
+}
+
+@keyframes brillar {
+    0%,100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.contenido {
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #8000ff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="estrellas">
+    <div class="estrella" style="top:20%; left:30%;"></div>
+    <div class="estrella" style="top:70%; left:20%;"></div>
+    <div class="estrella" style="top:40%; left:80%;"></div>
+    <div class="estrella" style="top:15%; left:60%;"></div>
+    <div class="estrella" style="top:85%; left:70%;"></div>
+</div>
+
+<div class="contenido">
+
+<h1>Para mi odiosa favorita 💜</h1>
+
+<p>
+Un pequeño regalo hecho con todo mi corazón para vos, Celia.
+</p>
+
+<button>
+✨ Comenzar ✨
+</button>
+
+</div>
+
+</body>
+</html>
