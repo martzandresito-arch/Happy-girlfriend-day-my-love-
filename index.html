@@ -3,65 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Para Celia 💜</title>
+
+<title>Para ti 💗</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Georgia', serif;
-}
 
 body {
+    margin: 0;
     height: 100vh;
-    overflow: hidden;
-    background: linear-gradient(135deg, #2b004f, #8000ff);
+    background: linear-gradient(135deg, #4b005c, #ff7eb3);
+    color: white;
+    font-family: Georgia, serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-}
-
-.estrellas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    text-align: center;
     overflow: hidden;
 }
 
-.estrella {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: white;
-    border-radius: 50%;
-    animation: brillar 3s infinite;
-}
-
-@keyframes brillar {
-    0%,100% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: 1;
-    }
-}
-
 .contenido {
-    text-align: center;
-    z-index: 2;
-    padding: 20px;
+    padding: 25px;
+    max-width: 600px;
+    animation: aparecer 2s;
 }
 
 h1 {
-    font-size: 45px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 25px;
 }
 
 p {
-    font-size: 20px;
-    margin-bottom: 35px;
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 25px;
 }
 
 button {
@@ -69,42 +43,135 @@ button {
     border: none;
     border-radius: 30px;
     background: white;
-    color: #8000ff;
+    color: #d63384;
     font-size: 18px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
     transform: scale(1.1);
 }
+
+#historia {
+    display:none;
+}
+
+@keyframes aparecer {
+    from {
+        opacity:0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+.estrella {
+    position:absolute;
+    width:5px;
+    height:5px;
+    background:white;
+    border-radius:50%;
+    animation: brillo 3s infinite;
+}
+
+@keyframes brillo {
+    50% {
+        opacity:0.2;
+    }
+}
+
 </style>
 
 </head>
 
 <body>
 
-<div class="estrellas">
-    <div class="estrella" style="top:20%; left:30%;"></div>
-    <div class="estrella" style="top:70%; left:20%;"></div>
-    <div class="estrella" style="top:40%; left:80%;"></div>
-    <div class="estrella" style="top:15%; left:60%;"></div>
-    <div class="estrella" style="top:85%; left:70%;"></div>
-</div>
 
-<div class="contenido">
+<div class="estrella" style="top:20%;left:20%;"></div>
+<div class="estrella" style="top:70%;left:80%;"></div>
+<div class="estrella" style="top:40%;left:60%;"></div>
+<div class="estrella" style="top:85%;left:30%;"></div>
 
-<h1>Para mi odiosa favorita 💜</h1>
+
+<div class="contenido" id="inicio">
+
+<h1>Para ti 💗</h1>
 
 <p>
-Un pequeño regalo hecho con todo mi corazón para vos, Celia.
+Este pequeño espacio fue creado con mucho cariño,
+porque aunque a veces las palabras no sean suficientes,
+quiero intentar mostrarte un poco de todo lo que significas para mí.
 </p>
 
-<button>
+<p>
+Quizás no pueda darte un regalo que puedas sostener con tus manos,
+pero sí puedo darte algo que nace de mi corazón.
+</p>
+
+<button onclick="mostrarHistoria()">
 ✨ Comenzar ✨
 </button>
 
 </div>
+
+
+
+<div class="contenido" id="historia">
+
+<h1>Una historia especial 💗</h1>
+
+<p>
+Nunca imaginé que una persona que llegó a mi vida de una manera tan inesperada
+terminaría convirtiéndose en alguien tan importante para mí.
+</p>
+
+<p>
+Al principio no fui la mejor versión de mí mismo.
+No sabía valorar las cosas como debía y cometí errores,
+pero con el tiempo aprendí, crecí y entendí lo bonito que es cuidar a alguien especial.
+</p>
+
+<p>
+Gracias por conocer mi corazón incluso cuando no era perfecto.
+Gracias por cada momento de felicidad, por cada risa,
+por cada palabra que me hizo sentir acompañado incluso estando lejos.
+</p>
+
+<p>
+Me encanta tu forma de ser, esa manera única que tienes de hacer que todo se sienta diferente.
+Amo tu voz, porque para mí es una de las melodías más bonitas que existen.
+Amo tu risa, porque tiene la capacidad de cambiar mi día.
+Amo cómo me haces sentir, la paz que me das y la felicidad que traes a mi vida.
+</p>
+
+<button onclick="siguiente()">
+💗 Continuar
+</button>
+
+</div>
+
+
+<script>
+
+function mostrarHistoria(){
+
+document.getElementById("inicio").style.display="none";
+document.getElementById("historia").style.display="block";
+
+}
+
+
+function siguiente(){
+
+alert("Todavía queda mucho por descubrir... 💗");
+
+}
+
+</script>
+
 
 </body>
 </html>
